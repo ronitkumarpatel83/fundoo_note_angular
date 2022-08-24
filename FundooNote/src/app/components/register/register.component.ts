@@ -28,7 +28,7 @@ export class RegisterComponent implements OnInit {
       let data = {
         first_name: this.registerForm.value.firstname,
         last_name: this.registerForm.value.lastname,
-        username: "ronit43",
+        username: "ronit44",
         password: this.registerForm.value.password,
         email: this.registerForm.value.username,
         phone_number: "1234567890",

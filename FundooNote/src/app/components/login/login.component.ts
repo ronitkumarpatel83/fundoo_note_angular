@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      username: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.required, ]],
       // email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]]
     });
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     else{
       console.log("Login Successfully Completed");
       let data={
-        email:this.loginForm.value.username,
+        username:this.loginForm.value.email,
         password:this.loginForm.value.password
       }
       this.user.Login(data).subscribe((response:any)=> {
