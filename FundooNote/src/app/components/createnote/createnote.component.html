@@ -1,14 +1,30 @@
-<div class="form-head">
-    <div class="form-head2">
-        <div class="title">
-            <input type="text" placeholder="Title">
-        </div>
-        <div class="take-note">
-            <input type="text" placeholder="Take a note">
-        </div>
-        <div class="close-btn">
-            <app-icon></app-icon>
-            <button>Close</button>
+<div fxLayoutAlign="center center" ngClass.xs="ggg-xs">
+    <div class="add-form" fxLayout="column" fxLayoutAlign="center center" ngClass.xs="add-form-xs" ngClass.sm="add-form-sm">
+        <div class="form-element">
+            <form>
+                <div fxLayout="row">
+                    <div class="input-form" *ngIf="flag">
+                        <input type="text" placeholder="Title" formControlName="title">
+                    </div>
+                    <div *ngIf="flag" class="icons"><img src="../../../assets/push_pin_.svg" alt=""></div>
+                </div>
+                <div fxLayout="row">
+                    <div class="input-form" (click)="open()">
+                        <input id="take-note" type="text" placeholder="Take a note..." formControlName="desc">
+                    </div>
+                    <div *ngIf="!flag" fxLayout="row">
+                        <div class="icons"><img src="../../../assets/new_list.svg" alt=""></div>
+                        <div class="icons"><img src="../../../assets/brush_FILL.svg" alt=""></div>
+                        <div class="icons"><img src="../../../assets/image_FILL.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="icon-button" *ngIf="flag" fxLayout="row" fxLayoutAlign="space-between center">
+                    <div class="icon-container">
+                        <app-icon></app-icon>
+                    </div>
+                    <button mat-button>Close</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

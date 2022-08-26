@@ -1,40 +1,63 @@
-.form-head{
-    // border: 2px solid red;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // text-align: center;
-    margin-top: 30px;
-    margin-left: 20%;
-    width: 40%;
-    
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+.add-form{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(27, 26, 26, 0.667);
+    width: 580px;
+    margin-top: 25px;
 }
-.form-head2{
-    border: 2px solid grey;
-    border-radius: 8px;
-    position: relative;
-    left: 3rem;
-    width: 550px;
-    justify-content: center;
-    text-align: center;
+.input-form{
+    width: 100%;
 }
-.close-btn button{
+.input-form > input{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background: transparent;
+    font-size: medium;
+    width: 97%;
+    height: 40px;
     border: none;
-    margin-right: 15px;
+    outline: none;
+}
+.form-element{
+    width: 100%;
+    margin: 5px;
+    margin-left: 32px;
+}
+.icon-button{
+    width: 95%;
+}
+.icon-button > button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 80px;
+    height: 35px;
+}
+.icon-container{
+    margin-top: 3px;
+    width: 70%;
+    height: 30px;
     margin-bottom: 5px;
-    font-size: 15px;
-    line-height: 1.3;
-    letter-spacing: 0.048em;
 }
-.title input{
-    width:30vw;
-    height: 30px;
-    outline: none;
-    border: none;
+.icons{
+    display: flex;
+    height: 42px;
+    width: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
-.take-note input{
-    width:30vw;
-    height: 30px;
-    outline: none;
-    border: none;
+.icons:hover{
+    background-color: rgba(224, 223, 221, 0.995);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icons > img{
+    height: 22px;
+    margin-top: 5px;
+}
+
+.add-form-xs{
+    width: 95%;
 }

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./createnote.component.scss']
 })
 export class CreatenoteComponent implements OnInit {
-
+  flag=false
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  open(){
+    this.flag=true
+  }
 }
